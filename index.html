@@ -1,52 +1,257 @@
-
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    
-    <title>Number guessing game</title>
+<html lang="ru">
 
-    <style>
-      html {
-        font-family: sans-serif;
-      }
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="carusel.css">
 
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto;
-      }
-      
-      .form input[type="number"] {
-        width: 200px;
-      }
 
-      .lastResult {
-        color: white;
-        padding: 3px;
-      }
-    </style>
-  </head>
+   <title>Homewrk</title>
+</head>
 
-  <body>
-    <h1>Number guessing game</h1>
+<body>
+   <div class="Header">
+      <div class="Img">
+         <img class="headerImg" src="img/ZD.png">
+      </div>
+      <div class="headerTitle">
+         <h1 class="title">Недвижимость Комфорт</h1>
+      </div>
 
-    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+      <div class="sideBar">
+         <div> <a href="index.html" class="linkHead">Главная</a></div>
+         <div> <a href="index.html" class="linkHead">О нас</a></div>
+         <div> <a href="index.html" class="linkHead">Купить</a></div>
+         <div> <a href="index.html" class="linkHead">Контакты</a></div>
+      </div>
+   </div>
 
-    <div class="form">
-      <label for="guessField">Enter a guess: </label>
-      <input type="number" min="1" max="100" required id="guessField" class="guessField">
-      <input type="submit" value="Submit guess" class="guessSubmit">
-    </div>
+   <div class="office_text">
+      <div class="Body_2_Img">
+         <img class="officeImg" src="img/office.jpeg">
+      </div>
 
-    <div class="resultParas">
-      <p class="guesses"></p>
-      <p class="lastResult"></p>
-      <p class="lowOrHi"></p>
-    </div>
+      <div class="Body_21">
+         <h2 class="h21">Заголовок "О нас"</h3>
+            <p class="body21p">Однозначно, стремящиеся вытеснить традиционное производство,
+               нанотехнологии набирают популярность среди определенных слоев населения, а значит, должны быть смешаны с
+               не уникальными данными до степени совершенной неузнаваемости,
+               из-за чего возрастает их статус бесполезности.</p>
+      </div>
+   </div>
 
-    <script href="script.js"></script>
+   <div class="apartBlock">
+      <div class="apart">
+         <h2>Апартамент №1</h2>
+         <div class="scroller">
+            <div class="item">
+               <div class="card">
+                  <img src="aparts/apart1.jpeg" alt="">
+                  <span>
+                     <p id="infoApart"></p>
+                  </span>
+               </div>
+            </div>
+            <div class="item">
+               <div class="card">
+                  <img src="aparts/apart2.jpeg" alt="">
+                  <span></span>
+               </div>
+            </div>
+            <div class="item">
+               <div class="card">
+                  <img src="aparts/apart3.jpeg" alt="">
+                  <span></span>
+               </div>
+            </div>
+         </div>
+         <span class="btnPrev">&lt;</span>
+         <span class="btnNext">&gt;</span>
+      </div>
 
-  </body>
+      <div class="BlockTxtObjApart">
+         <p class="txtObjApart">
+            Адрес: Ленина 1<br>
+            ЖК Кристалл, м. Останкино<br>
+            Цена: 52.500.000₽<br>
+         </p>
+         <div>
+            <button class="buyBtn">
+               <p>Купить!</p>
+            </button>
+         </div>
+      </div>
+   </div>
+
+   <div class="apartBlock">
+      <div class="apart2">
+         <h2>Апартамент №2</h2>
+         <div class="scroller2">
+            <div class="item2">
+               <div class="card2">
+                  <img src="aparts/apart11.jpeg" alt="">
+               </div>
+            </div>
+            <div class="item2">
+               <div class="card2">
+                  <img src="aparts/apart22.jpeg" alt="">
+                  <span></span>
+               </div>
+            </div>
+            <div class="item2">
+               <div class="card2">
+                  <img src="aparts/apart33.jpeg" alt="">
+                  <span></span>
+               </div>
+            </div>
+         </div>
+         <span class="btnPrev2">&lt;</span>
+         <span class="btnNext2">&gt;</span>
+      </div>
+
+      <div class="BlockTxtObjApart">
+         <p class="txtObjApart">
+            Адрес: Циалковского 103а<br>
+            ЖК Мечта, м. Замоскворецкая<br>
+            Цена: 60.000.000₽<br>
+         </p>
+         <div>
+            <button class="buyBtn">
+               <p>Купить!</p>
+            </button>
+         </div>
+      </div>
+   </div>
+
+   <div class="apartBlock">
+      <div class="apart3">
+         <h2>Апартамент №3</h2>
+         <div class="scroller3">
+            <div class="item3">
+               <div class="card3">
+                  <img src="aparts/apart111.jpeg" alt="">
+                  <span>
+                     <p id="infoApart"></p>
+                  </span>
+               </div>
+            </div>
+            <div class="item3">
+               <div class="card3">
+                  <img src="aparts/apart222.jpeg" alt="">
+                  <span></span>
+               </div>
+            </div>
+            <div class="item3">
+               <div class="card3">
+                  <img src="aparts/apart333.jpeg" alt="">
+                  <span></span>
+               </div>
+            </div>
+            <div class="item3">
+               <div class="card3">
+                  <img src="aparts/apart444.jpeg" alt="">
+                  <span></span>
+               </div>
+            </div>
+            <div class="item3">
+               <div class="card3">
+                  <img src="aparts/apart555.jpeg" alt="">
+                  <span></span>
+               </div>
+            </div>
+         </div>
+         <span class="btnPrev3">&lt;</span>
+         <span class="btnNext3">&gt;</span>
+      </div>
+
+      <div class="BlockTxtObjApart">
+         <p class="txtObjApart">
+            Адрес: Советская 56б<br>
+            ЖК Гранде, м. Таганская<br>
+            Цена: 103.320.000₽<br>
+         </p>
+         <div>
+            <button class="buyBtn">
+               <p>Купить!</p>
+            </button>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="MapAndForm">
+      <div class="UpperForm">
+         <div class="form">
+            <p class="txtUForm">Заполните форму заявки!</p>
+            <p class="txtUForm">Мы перезвоним Вам, по указаному вами номеру. </p>
+            <span id="footerForm">
+               <form action="/" method="post">
+                  <input class="firstName" type="text" name="firstName" maxlength="12" placeholder="Имя">
+                  <input class="lastName" type="text" name="lastName" maxlength="16" placeholder="Фамилия"><br>
+                  <input class="email" type="text" name="email" maxlength="30" placeholder="Эл. почта">
+                  <input class="phone" type="number" name="Number" maxlength="2" placeholder="Номер телефона"><br>
+
+                  <textarea class="textarea" name="text" cols="10" rows="3"
+                     placeholder="Ваше сообщение..."></textarea><br>
+
+                  <label class="labelAgree" for="n1f">Согласен на обработку персональный данных</label>
+
+                  <input class="labelAgree" id="n1f" type="checkbox" name="12" value="nathin" readonly="readonly"
+                     checked=""><br>
+                  <input class="button" type="submit" name="submit" value="Sent">
+               </form>
+            </span>
+         </div>
+         <div class="map">
+            <div class="mapTxtDiv">
+               <p class="mapTxt">Наш офис находится здесь</p>
+               <p class="mapTxt">Работаем в ПН-ПТ с 11:00-20:00</p>
+            </div>
+            <iframe class="mapIframe"
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.9882585672585!2d37.61691173421392!3d54.19378312250811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41343f81ed9e5479%3A0x942a12ed4c69927e!2z0KLRg9C70YzRgdC60LjQuSDQmtGA0LXQvNC70Yw!5e0!3m2!1sru!2sru!4v1659696798466!5m2!1sru!2sru"
+               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+         <div class="smallMap">
+            <p class="smallMapTxt">Наш офис находится здесь</p>
+            <p class="smallMapTxt">Работаем в ПН-ПТ с 11:00-20:00</p>
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.326816039708!2d37.6194876808908!3d54.19505319944919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41343f81ed9e5479%3A0x942a12ed4c69927e!2z0KLRg9C70YzRgdC60LjQuSDQmtGA0LXQvNC70Yw!5e0!3m2!1sru!2sru!4v1659873571222!5m2!1sru!2sru"
+               width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+      </div>
+   </div>
+
+   <div class="Footer">
+      <div class="footImg">
+         <img src="img/ZD.png" class="footerImg">
+      </div>
+
+      <div class="footerText">
+         <p>
+            Текст о компании по продаже недвижимости.<br>
+            Сюда можно вставить любой вспомогательный текст.<br>
+         </p>
+      </div>
+      <div class="footerLink">
+         <div class="leftSideBarFooter">
+            <div> <a href="index.html" class="linkFoot">Главная</a></div>
+            <div> <a href="index.html" class="linkFoot">О нас</a></div>
+            <div> <a href="index.html" class="linkFoot">Купить</a></div>
+            <div> <a href="index.html" class="linkFoot">Контакты</a></div>
+         </div>
+         <div class="rightSideBarFooter">
+            <div> <a href="index.html" class="linkFoot">Покупка из-за рубежа</a></div>
+            <div> <a href="index.html" class="linkFoot">Аналитика</a></div>
+            <div> <a href="index.html" class="linkFoot">Наши партнеры</a></div>
+            <div> <a href="index.html" class="linkFoot">Политика конфиденциальности</a></div>
+         </div>
+      </div>
+
+
+      <script src="carusel.js"></script>
+</body>
 </html>
