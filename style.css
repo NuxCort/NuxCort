@@ -1,0 +1,379 @@
+*{
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+p{
+	text-align: center;
+	font-size: 25px;
+}
+h3{
+	text-align: center;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	
+}
+
+                                            /*Начало хедера*/
+
+.Header{
+	border-radius: 0 0 40px 40px;
+	border: 2px solid #EAEAEA;
+	background-color: #EEF4F5;
+	display: flex;
+}
+.Img{
+
+	flex:1;
+	order: 1;
+	padding-left: 55px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.headerImg{
+	width: 100px;
+	height: 100px;
+}
+
+.headerTitle{
+	flex:2;
+	order: 2;
+}
+.title{
+	font-size:38px;
+}
+
+.sideBar{
+	display: flex;
+	flex: 5;
+	order: 3;
+	justify-content: space-between;
+	padding: 10px 10px 0px 10px;
+	align-items: center;
+	margin-left: 100px;
+	line-height: 40px;
+	padding-top:50px;
+	padding-right: 40px;
+	padding-left: 30px;
+}
+
+
+.linkHead{
+	display: flex;
+	font-size: 28px;
+	color: black;
+	transition-property: font-size;
+	transition-duration: 1s;
+}
+
+.linkHead:hover{
+	background-color:#87ebf83a;
+	border-radius: 4px;
+	font-size: 30px;
+}
+                                /*Конец хедера*/
+                                /*Начало блока с картинкой офисом*/
+
+.office_text{
+	display: flex;
+	background: #EEF4F5;
+	border-radius: 40px;
+	margin-top: 15px;
+}
+.Body_2{
+
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-right: 10px;
+	box-sizing: border-box;
+
+}
+
+.Body_2_Img{
+margin: 30px;
+flex:1;
+order:1;
+}
+
+.officeImg{
+	width: 100%;
+	max-width: 700px;
+	min-width: 290px;
+    height: auto;
+	border-radius: 30px;
+}
+
+.h21{
+	padding-top: 50px;
+	text-align: center;
+}
+
+.Body_21{
+	flex:1;
+	order:2;
+	margin-top: 30px;
+	margin-right: 20px;
+	height: 506px;
+	width: 710px;
+}
+
+.body21p{
+	padding: 40px 60px 40px 40px;
+}
+
+                                /*Конец блока с картинкой офиса*/
+
+                                /*Начало блока с формой и картой*/
+
+.MapAndForm{
+	background-color: #EEF4F5;
+	border-radius: 50px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 30px;
+}
+
+.UpperForm{
+	display:flex;
+}
+
+#footerForm{
+	text-align: center;
+	color: whitesmoke;
+	font-size: 22px;
+  }
+  
+  form{
+	background: #EEF4F5;
+	border:2px solid black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-right: auto;
+	margin-left: 200px;
+	border-radius: 40px;
+	width: 400px;
+	padding:30px;
+	display: block;
+	flex: 3;
+	order: 1;
+  }
+  
+  .firstName,
+  .lastName,
+  .email,
+  .phone {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin-bottom: 20px;
+	margin-right: 20px ;
+	width: 170px;
+	height: 40px;
+	font-size: 13pt;
+	border-radius: 10px;
+	border: 2px solid black;
+	text-align: center;
+  }
+  .email{
+	width: 200px;
+	height: 40px;
+  }
+
+  .textarea{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 100px;
+	border-radius: 20px;
+	text-align: center;
+  }
+  .labelAgree{
+	color:black;
+	margin-bottom: 30px;
+	font-size:15px;
+  }
+
+.txtUForm,
+.smallMapTxt,
+.mapTxt{
+	font-size: 20px;
+}
+.txtUForm{
+	margin-left: 180px;
+}
+
+.mapTxtDiv{
+	display: block;
+
+	
+}
+
+.mapTxt{
+	display: block;
+	flex: 1;
+	align-items: center;
+	position: relative;
+
+}
+
+  .map{
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	padding-bottom: -30px;
+  }
+
+  .mapIframe{
+	margin-top: 50px;
+  }
+
+
+
+  .button{
+  border-radius: 100px;
+  width: 100px;
+  height: 30px;
+  transition-duration: 1s;
+  }
+
+.button:hover{
+    background-color: rgba(255, 95, 95, 0.426);
+    cursor: pointer;
+}
+
+                                   /*Конец блока с формой и картой*/
+
+                                   /*Начало футера*/
+
+.Footer{
+	border-radius: 40px 40px 0 0;
+	border: 2px solid #EAEAEA;
+	background-color: #EEF4F5;
+	display: flex;
+	box-sizing: content-box;
+	
+}
+
+.footerLink{
+	display: flex;
+	flex: 2;
+	order: 2;
+	justify-content: space-between;
+	padding: 10px 10px 0px 10px;
+	
+}
+
+.leftSideBarFooter{
+	display: inline-block;
+	align-items: center;
+	margin-left: 100px;
+	line-height: 40px;
+}
+.rightSideBarFooter{
+	display: inline-block;
+	align-items: center;
+	line-height: 40px;
+}
+.linkFoot{
+	font-size: 20px;
+	color: black;
+	transition-property: font-size;
+	transition-duration: 1s;
+}
+
+.linkFoot:hover{
+	background-color:#87ebf83a;
+	border-radius: 4px;
+	font-size: 22px;
+
+}
+
+.footerText{
+	flex:2;
+	order: 1;
+	padding-top: 50px;
+}
+
+.footImg{
+	flex: 1;
+	order: 3;
+	position: relative;
+}
+
+.footerImg{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+
+                                           /*Конец футера*/
+
+@media screen and (min-width: 650px){
+	.smallMap{
+		display: none;
+	}
+}
+@media screen and (max-width: 650px){
+
+.headerImg{
+	margin-left: -40px;
+	margin-right: 20px;
+	width: 55px;
+	height: 55px;
+}
+.title{
+	font-size: 20px;
+	position: relative;
+	top: 25%;
+	right: 40%;
+}
+.sideBar{
+	display: none;	
+}
+
+.Body_2_Img{
+	margin-top: 10px;
+}
+
+.Body_21{
+	margin: 0 auto;
+	margin-top: -20px;
+	width: 600px;
+}
+.h21{
+	padding-top: 10px;
+}
+.body21p{
+	padding-top: 10px;
+}
+
+.office_text{
+	flex-direction: column;
+}
+
+.UpperForm{
+	flex-direction: column;
+	margin-top: -40px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.smallMap{
+	margin: 0 auto;
+}
+.map{
+	display: none;
+}
+.footImg,
+.footerText{
+	display: none;
+}
+.footerLink{
+	margin-right: 50px;
+}
+
+}
